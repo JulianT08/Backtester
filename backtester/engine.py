@@ -254,5 +254,5 @@ class BacktestEngine:
             'total_return': total_return,
             'cagr': cagr,
             'max_drawdown': max_drawdown,
-            'sharpe': sharpe
-        } 
+            'sharpe': sharpe,
+        }
