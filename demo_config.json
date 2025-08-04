@@ -1,0 +1,26 @@
+{
+  "ticker": "AAPL",
+  "share_qty": 100,
+  "legs": [
+    {
+      "side": "short",
+      "type": "call",
+      "strike": 150.0,
+      "premium": 5.50,
+      "qty": 1,
+      "trade_date": "2024-01-15",
+      "expiry": "2024-04-19"
+    },
+    {
+      "side": "long",
+      "type": "put",
+      "strike": 130.0,
+      "premium": 3.25,
+      "qty": 1,
+      "trade_date": "2024-01-15",
+      "expiry": "2024-04-19"
+    }
+  ],
+  "start_date": "2024-01-15",
+  "end_date": "2024-04-19"
+} 
