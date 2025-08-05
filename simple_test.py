@@ -5,9 +5,11 @@ Simple test script for the backtesting package.
 
 import sys
 import os
+import importlib.util
 
-# Add current directory to path
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+# Ensure the package can be imported whether or not it is installed
+if importlib.util.find_spec("backtester") is None:
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 def test_imports():
     """Test that all modules can be imported."""
@@ -120,4 +122,4 @@ def main():
         return 1
 
 if __name__ == "__main__":
-    sys.exit(main()) 
+    sys.exit(main())
